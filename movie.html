@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peliculas</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css/movie.css" />
+    <!--Javascript-->
+    <script src="./JS/jquery-3.4.1.min.js"></script>
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0ffb3017b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/movie.js"></script>
+  </head>
+
+  <body id="movie">
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!--CONTAINER-->
+      <div class="container">
+        <!--IMAGEN DE ENLACE "LOGO"-->
+        <a href="./index.html" class="navbar-brand">
+          <img
+            src="./img/logo-movies.png"
+            alt="Peliculas"
+            width="30"
+            height="30"
+          />
+        </a>
+        <!--DIV DE ENLACES-->
+        <div class="collapse navbar-collapse">
+          <!--UL-->
+          <ul class="navbar-nav">
+            <!--TODOS LOS li-->
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./now-playing.html"
+                >Ultimos lanzamientos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./popular.html">Populares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./search.html">Buscador</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--POSTER-->
+    <div class="container-fluid movie-info">
+      <div class="bg-color-custom">
+        <div class="container">
+          <div class="row">
+            <div class="col-5 movie-info__poster">
+              <!--AQUI VA LA LA IMAGEN DEL POSTER-->
+            </div>
+            <div class="col-7 movie-info__data">
+              <!--AQUI VAN LOS DETALLES DE LA PELICULA-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--MODAL-->
+    <div
+      class="modal fade"
+      id="video-teaser"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fas fa-window-close"></i>
+            </button>
+            <div class="video-teaser-iframe">
+              <!--Aqui va el trailer-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css/search.css" />
+    <!--Javascript-->
+    <script src="./JS/jquery-3.4.1.min.js"></script>
+    <script src="./JS/popper.min.js"></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0ffb3017b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/search.js"></script>
+  </head>
+
+  <body id="search">
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!--CONTAINER-->
+      <div class="container">
+        <!--IMAGEN DE ENLACE "LOGO"-->
+        <a href="./index.html" class="navbar-brand">
+          <img
+            src="./img/logo-movies.png"
+            alt="Peliculas"
+            width="30"
+            height="30"
+          />
+        </a>
+        <!--DIV DE ENLACES-->
+        <div class="collapse navbar-collapse">
+          <!--UL-->
+          <ul class="navbar-nav">
+            <!--TODOS LOS li-->
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./now-playing.html"
+                >Ultimos lanzamientos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./popular.html">Populares</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./search.html">Buscador</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--CONTENEDOR-->
+    <div class="container mt-5">
+      <h1 class="text-center mb-5">Buscador de Peliculas</h1>
+      <input
+        type="text"
+        id="search-movie"
+        class="form-control"
+        placeholder="Busca una Pelicula"
+        onkeyup="searchMovie()"
+      />
+      <div class="row list-card"></div>
+    </div>
+  </body>
+</html>
